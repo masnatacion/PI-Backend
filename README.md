@@ -49,7 +49,7 @@ Open terminal
 
 > cd your-project-folder
 > 
-> php composer install
+> composer install
 > 
 > php artisan migrate
 > 
