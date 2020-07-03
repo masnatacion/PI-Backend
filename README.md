@@ -27,9 +27,13 @@ Download docker
 Open terminal
 
 > cd your-project-folder
+> 
 > docker-compose up
+> 
 > docker-compose exec php composer install
+> 
 > docker-compose exec php php artisan migrate
+> 
 > docker-compose exec php php artisan db:seed
 
 The project runs in 
@@ -44,8 +48,11 @@ Make a copy of .env.example to .env and change environment variables
 Open terminal
 
 > cd your-project-folder
+> 
 > php composer install
+> 
 > php artisan migrate
+> 
 > php artisan db:seed
 
 ## Postman
@@ -55,9 +62,14 @@ We create 2 environment variables **base_url** and **token**.  The **base_url** 
 
 ## Users for testing
 Administrator user:
+
 username: admin
+
 password: admin
 
+
 Employee user:
+
 username:ee
+
 password:ee
