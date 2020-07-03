@@ -24,7 +24,7 @@ class LoginController extends ApiController
 
         $user = $user->whereUsername($request->get('username'))->firstOrFail();
 
-        if(!$user->isAdmin() && !$user->isActive())
+        if(!$user->isAdmin() || !$user->isActive())
             return $this->unauthorized();
 
         if (!$token = auth()->attempt($validator->validated())) {

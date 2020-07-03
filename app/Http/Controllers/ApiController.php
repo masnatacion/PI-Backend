@@ -16,7 +16,7 @@ class ApiController extends Controller
 		return response()->json($response, $code);
     }
 
-	public function unauthorized($message = null, $data = null, $title = '¡Ups!')
+	public function unauthorized($message = "Unauthorized", $data = null, $title = '¡Ups!')
 	{
 		return $this->api(Response::HTTP_UNAUTHORIZED,$message,$data,$title);
 	}
@@ -26,7 +26,7 @@ class ApiController extends Controller
 		return $this->api(Response::HTTP_BAD_REQUEST,$message,$data,$title);
 	}
 
-	public function not_found($message = 'No existe!', $data = null, $title = '¡Ups!')
+	public function not_found($message = 'Not found!', $data = null, $title = '¡Ups!')
 	{
 		return $this->api(Response::HTTP_NOT_FOUND,$message,$data,$title);
 	}
