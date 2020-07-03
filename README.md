@@ -30,6 +30,9 @@ Open terminal
 > 
 > docker-compose up
 > 
+
+Open other terminal or tap
+
 > docker-compose exec php composer install
 > 
 > docker-compose exec php php artisan migrate
@@ -68,8 +71,16 @@ username: admin
 password: admin
 
 
+
 Employee user:
 
 username:ee
 
 password:ee
+
+## Cron job
+
+if you want to run the email log open a new terminal
+
+> cd your-project-folder
+> php artisan log:email
